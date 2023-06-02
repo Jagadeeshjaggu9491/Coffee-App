@@ -15,7 +15,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: uppercase;
     transition: .2s linear;
 }
 
@@ -38,6 +37,9 @@ html::-webkit-scrollbar-thumb{
 }
 body{
     background: var(--bg);
+}
+section{
+    padding: 2rem 7%;
 }
 .btn{
     margin-top: 1rem;
@@ -184,6 +186,36 @@ body{
 
 /* header section ends */
 
+/* home section starts */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./Assets/banner-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 69rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+/* home section ends */
+
 
 
 /* ////////////////////////////////////// */
@@ -197,6 +229,9 @@ body{
 
     .header{
         padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem ;
     }
 }
 
@@ -226,6 +261,20 @@ body{
     .header .search-form{
         width: 90%;
         right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
     }
 }
 
